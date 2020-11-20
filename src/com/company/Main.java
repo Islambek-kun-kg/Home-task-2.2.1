@@ -10,24 +10,26 @@ public class Main {
 
     }
 
-    public static String createObject(String className) {
+    public static Animal createObject(String className) {
         switch (className) {
             case "dog":
-                Dog dog = new Dog("Reks", "Black", "Hasky", 25);
+                Animal dog = new Dog("Reks", "Black", "Hasky", 25);
                 dog.print();
                 System.out.println("------------------------------------------------------------------");
-                break;
+                return dog;
             case "cat":
-                Cat cat = new Cat("Vasya", "White", "House", 10);
+                Animal cat = new Cat("Vasya", "White", "House", 10);
                 cat.print();
                 System.out.println("------------------------------------------------------------------");
-                break;
+                return cat;
             case "hamster":
-                Hamster hamster = new Hamster("Pon pon", "Brown", "Carrot", 8);
+                Animal hamster = new Hamster("Pon pon", "Brown", "Carrot", 8);
                 hamster.print();
                 System.out.println("------------------------------------------------------------------");
-                break;
+                return hamster;
+            default:
+                return null;
         }
-        return null;
     }
+
 }
