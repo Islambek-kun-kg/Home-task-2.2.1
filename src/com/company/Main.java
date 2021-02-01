@@ -7,7 +7,6 @@ public class Main {
         createObject("cat");
         createObject("hamster");
         createObject("ds");
-
     }
 
     public static Animal createObject(String className) {
@@ -31,5 +30,4 @@ public class Main {
                 return null;
         }
     }
-
 }
